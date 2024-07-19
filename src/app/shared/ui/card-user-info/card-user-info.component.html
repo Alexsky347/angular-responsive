@@ -28,14 +28,14 @@
 
   <div class="card-body">
     <div class="patient-contact">
-      <p>Téléphone patiente :<span id="user-phone">{{ user.phone }}</span></p>
-      <p>Praticienne référente : <fa-icon class="sm-icons user-info" [icon]="faUser"></fa-icon> <span class="user-info">{{ user.referringPractitionerFirstName }} {{ user.referringPractitionerLastName }}</span></p>
-      <p>Médecin référent : <fa-icon class="sm-icons user-info" [icon]="faUser"></fa-icon> <span class="user-info">{{ user.referringDoctorFirstName }} {{ user.referringDoctorLastName }}</span></p>
+      <p>Téléphone patiente :<span class="ml-20" id="user-phone">{{ user.phone }}</span></p>
+      <p>Praticienne référente : <fa-icon class="sm-icons user-info ml-8" [icon]="faUser"></fa-icon> <span class="user-info">{{ user.referringPractitionerFirstName }} {{ user.referringPractitionerLastName }}</span></p>
+      <p>Médecin référent : <fa-icon class="sm-icons user-info ml-35" [icon]="faUser"></fa-icon> <span class="user-info">{{ user.referringDoctorFirstName }} {{ user.referringDoctorLastName }}</span></p>
     </div>
     <div class="patient-medical">
-      <p>Protocole en cours :<span class="chip">{{ user.protocol.toUpperCase() }}</span></p>
-      <p>Pathologie : <span>{{ user.pathology }}</span></p>
-      <p>Date de début : <span>{{ user.protocolStartDate | date:'dd/MM/yyyy' }}</span></p>
+      <p>Protocole en cours :<span class="chip ml-8">{{ user.protocol.toUpperCase() }}</span></p>
+      <p>Pathologie : <span class="ml-55">{{ user.pathology }}</span></p>
+      <p>Date de début : <span class="ml-35">{{ user.protocolStartDate | date:'dd/MM/yyyy' }}</span></p>
     </div>
   </div>
 </div>
