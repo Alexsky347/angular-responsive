@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --danger-color: #B3182A;
+  --primary-color: #007bff;
+  --primary-color-light: #cce5ff;
+  --success-color: #18B46E;
+  --success-color-light: #E6F7F1;
+  --surface-color: #FFFFFF;
+  --main-surface-color: #FAF9F7;
+  --font-color-light:#2E3A3C
+  ;
+}
+
+
+body {
+  font-family: 'Open Sans';
+  background-color: var(--main-surface-color);
+}

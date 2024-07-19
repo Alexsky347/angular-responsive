@@ -1,0 +1,41 @@
+<div class="card">
+  <div class="card-header">
+    <div class="patient-info">
+      <div class="patient-main">
+        <fa-icon [icon]="faUser" class="user-icon"></fa-icon>
+        <div class="patient-name-age">
+          <h4>{{ user.firstName }} {{ user.lastName }}</h4>
+          <p>{{ user.age }} ans</p>
+        </div>
+      </div>
+      <div class="patient-details">
+        <p>Né·e le 04/07/1980</p>
+        <p>de sexe {{ user.sex.toLowerCase() }}, {{ user.gender.toLowerCase() }}</p>
+      </div>
+      <hr>
+    </div>
+    <div class="patient-status">
+      <button class="btn btn-success">
+        <fa-icon class="sm-icons" [icon]="faUser"></fa-icon>
+        Compte activé
+      </button>
+      <button class="btn btn-success">
+        <fa-icon class="sm-icons" [icon]="faNewsPaper"></fa-icon>
+        Identité validée</button>
+    </div>
+  </div>
+  <hr />
+
+  <div class="card-body">
+    <div class="patient-contact">
+      <p>Téléphone patiente :<span id="user-phone">{{ user.phone }}</span></p>
+      <p>Praticienne référente : <fa-icon class="sm-icons user-info" [icon]="faUser"></fa-icon> <span class="user-info">{{ user.referringPractitionerFirstName }} {{ user.referringPractitionerLastName }}</span></p>
+      <p>Médecin référent : <fa-icon class="sm-icons user-info" [icon]="faUser"></fa-icon> <span class="user-info">{{ user.referringDoctorFirstName }} {{ user.referringDoctorLastName }}</span></p>
+    </div>
+    <div class="patient-medical">
+      <p>Protocole en cours :<span class="chip">{{ user.protocol.toUpperCase() }}</span></p>
+      <p>Pathologie : <span>{{ user.pathology }}</span></p>
+      <p>Date de début : <span>{{ user.protocolStartDate | date:'dd/MM/yyyy' }}</span></p>
+    </div>
+  </div>
+</div>

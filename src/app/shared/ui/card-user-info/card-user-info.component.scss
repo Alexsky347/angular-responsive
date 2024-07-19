@@ -1,0 +1,123 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px;
+}
+.card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--surface-color);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: var(--surface-color);
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-main {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  height: 32px;
+  font-size: 2rem;
+  padding: 10px;
+  color: var(--primary-color);
+}
+.patient-name-age {
+  display: flex;
+  margin-top: 5px;
+}
+
+.patient-name-age h4 {
+  font-size: 1.2rem;
+}
+
+.patient-name-age p {
+  margin-top: 27px;
+  margin-left: 7px;
+  font-size: 1rem;
+}
+
+.patient-details {
+  display: flex;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.patient-status {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: var(--success-color-light);
+  color: var(--success-color);
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .card-body,
+  .card-header {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.patient-contact,
+.patient-medical {
+  flex: 1;
+}
+
+.patient-contact p,
+.patient-medical p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: var(--font-color-light);
+}
+
+.sm-icons {
+  height: 12px;
+}
+
+#user-phone {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.user-info {
+  color: var(--success-color);
+  text-decoration: underline;
+  background-color: var(--success-color-light);
+}
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  color: var(--primary-color);
+  background-color: var(--primary-color-light);
+  font-weight: bold;
+}
